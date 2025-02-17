@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK, PAPER, SCISSORS</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <style>
+        nav ul {
+        list-style-type: none;
+        }
+
+        nav ul li {
+        display: inline-block;
+        margin: 0 15px;
+        }
+
+        nav ul li a {
+        text-decoration: none;
+        color: black;
+        }
+
+        nav ul li a:hover {
+        background-color:brown; 
+        }
+    </style>
+</head>
+<body>
+    <header class = "share">
+    <h1>Rock Paper Scissors, Shoot</h1>
+    <nav>   
+        <ul>
+            <li><a href="https://pcpartpicker.com/" target ="_blank">PC BUILDER</a></li>
+            <li><a href="https://www.netflix.com/"  target ="_blank">Netflix</a></li>
+            <li><a href="https://www.google.com/"   target="_blank">Google</a></li>
+        </ul>
+    </nav>
+   </header> 
+</body>
+<div class = "area">
+    <section class = "main">
+        <h2>Play the Game</h2>
+        <form>
+            <label for = "name">Name:</label>
+            <input type = "text" id = "name" required/>
+
+            <br><br>
+
+            <lable for = "choice">Choose:</lable>
+            <select id = "choice" name = "choice">
+                <option value = "rock">Rock</option>
+                <option value = "paper">Paper</option>
+                <option value = "scissor">Scissor</option>
+            </select>
+            <button type = "submit">Submit</button>
+        </form>
+    </section> 
+    <aside class = "side_of_website">           
+        <h2>Rules<h2>
+        <p>How to Play Rock-Paper-Scissors:</p>
+      <ul>
+        <li>Rock beats Scissors</li>
+        <li>Scissors beats Paper</li>
+        <li>Paper beats Rock</li>
+      </ul>
+    </aside>
+</div>
+<footer class = share>
+    <p>Rock Paper Scissors Game By Jon Nguyen, All rights reserved<p>
+   </footer>
+</html>
