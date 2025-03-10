@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Page</title>
+    <link rel="stylesheet" href="MainPageStyle.css">
+</head>
+<body>
+    
+  <header>
+    <h1>Games</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="HomePage.html">Home</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+  <div class = ".container">
+    <h2>Rock, Paper, Scissors</h2> 
+    <form class="game-form" onsubmit="return playGame();">
+      <label>
+        <input type="radio" name="choice" value="Rock" required>
+        Rock
+      </label>
+      <label>
+        <input type="radio" name="choice" value="Paper">
+        Paper
+      </label>
+      <label>
+        <input type="radio" name="choice" value="Scissors">
+        Scissors
+      </label>
+      <br><br>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="results">
+      <div class="choice-box">
+        <h3>You Chose:</h3>
+        <p id="playerChoice">None</p>
+      </div>
+      <div class="choice-box">
+        <h3>Computer Chose:</h3>
+        <p id="robotChoice">None</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Copyright @ Jon Nguyen</p>
+  </footer>
+
+  <script src="gameLogic.js"></script>
+
+</body>
+</html>
