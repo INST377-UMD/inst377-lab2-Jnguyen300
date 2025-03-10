@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4</title>
+    <link rel = "stylesheet" href = "Lab4style.css">
+</head>
+<body>
+    <h1 id = "title">INST 377 Lab4</h1> 
+    <div class = section> <!--Alert Section-->
+        <h2>Alert Me</h2>
+        <form onsubmit="NameAlert(event)">
+            <label for = "name">Name:</label>
+            <input type = "text" id = "name" placeholder = "Enter your name" required>
+            <br>
+            <button class = button type = "submit">Alert Me</button>   
+        </form>
+    </div>
+
+    <div class = section> <!--Text Section-->
+        <h2>Add Text</h2>
+        <button class = "button" onclick = "addtext()">Add Text</button>
+    </div>
+
+    <div>
+    
+    
+    <div class = section> <!--Text Tester-->
+        <h2>Tester</h2>
+        <form onsubmit="textValidator(event)">
+            <label for = "name">Text Tester:</label>
+            <input type = "text" id = "text-input" placeholder = "Enter text">
+            <br>
+            <button class = button type = "submit">Validate Text</button>
+        </form>
+    </div>
+
+    <div class = section> <!--Change Color Background-->
+        <h2>Change Color</h2>
+        <button class = "button" onclick="colorChanger()">Change Color</button>
+    </div>
+
+    <div><!--Java Functionality-->
+        <script>
+            function NameAlert(event){
+                event.preventDefault();
+                alert("Hi " + document.getElementById("name").value + "!");
+
+            }
+
+            function colorChanger(){
+                document.body.style.backgroundColor = document.body.style.backgroundColor === 'green' ? 'purple' : 'green';  
+            }
+
+            function textValidator(event){
+                event.preventDefault();
+                var text = document.getElementById('text-input').value;
+                var validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+                if(validation.test(text)){
+                    alert('No special characters are allowed!')
+                } else {
+                    alert('Valid Text!')
+                }
+            }
+
+            function addtext(){
+                document.getElementById('title').textContent += 'Add Text';
+            }
+        </script>
+    </div>
+
+</body>
+</html>

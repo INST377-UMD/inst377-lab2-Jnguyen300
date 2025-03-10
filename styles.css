@@ -1,0 +1,51 @@
+
+body {
+  font-family:'Times New Roman', Times, serif;
+  background-color:cornflowerblue;
+  padding: 15px;
+}
+
+.share {
+  background-color:chartreuse; 
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 6px;
+}
+
+
+.area {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.main{
+  width: 70%; 
+  background-color:bisque; 
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+
+.side_of_website{
+  width: 50%; 
+  background-color: #cdffe5; 
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+
+.side_of_website:hover {
+  background-color:blue;
+}
+
+
+#name {
+  width: 150px;
+  transition: width 0.3s;
+}
+
+#name:focus {
+  width: 250px;
+}
